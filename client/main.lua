@@ -322,7 +322,7 @@ RegisterNetEvent('qb-tow:client:TowVehicle', function()
                             flags = 16,
                         }, {}, {}, function() -- Done
                             StopAnimTask(PlayerPedId(), "mini@repair", "fixing_a_ped", 1.0)
-                            AttachEntityToEntity(targetVehicle, vehicle, GetEntityBoneIndexByName(vehicle, 'bodyshell'), 0.0, -1.5 + -0.85, 0.0 + 1.15, 0, 0, 0, 1, 1, 0, 1, 0, 1)
+                            AttachEntityToEntity(targetVehicle, vehicle, GetEntityBoneIndexByName(vehicle, 'bodyshell'), 0.0, 7.5 + -0.85, 0.0 + 1.60, 0, 0, 0, 1, 1, 0, 1, 0, 1)
                             FreezeEntityPosition(targetVehicle, true)
                             CurrentTow = targetVehicle
                             if NpcOn then
